@@ -3,7 +3,7 @@
 .set noreorder
 
 /* MIPS Big-endian Linux bind shell on TCP port 4444, 261 bytes */
-/* Avoids use of bad char's [ "\x00", "\x0a", \x0d", "\x20", "\x25", "\x3d" ] */
+/* Avoids use of bad char's [ "\x00", "\x0a", "\x0d", "\x20", "\x25", "\x3d" ] */
 
 __start:
       /* socket(2, 2, 0) */
