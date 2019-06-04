@@ -3,6 +3,7 @@
 ## Reference: http://phrack.org/issues/66/12.html
 
 ## python3-pwntools
+## sudo apt install git binutils-arm*
 ## pip3 install git+https://github.com/arthaud/python3-pwntools.git
 from pwn import *
 
